@@ -42,7 +42,7 @@ with login.form :
 email=test@iroco.co&password=pass
 ```
 
-It was not working because of the end of line character. We had to remove it with : 
+It was not working because of the end of line `0a` line feed character. We had to remove it with : 
 
 ```shell
 $ truncate -s -1 login.form
