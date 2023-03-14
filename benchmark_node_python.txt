@@ -1,0 +1,282 @@
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>                                                                                                                                                            
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/                                                                                                                                           
+Licensed to The Apache Software Foundation, http://www.apache.org/                                                                                                                                                 
+                                                                                                                                                                                                                   
+Benchmarking localhost (be patient)                                                                                                                                                                                
+Completed 1000 requests                                                                                                                                                                                            
+Completed 2000 requests                                                                                                                                                                                            
+Completed 3000 requests                                                                                                                                                                                            
+Completed 4000 requests                                                                                                                                                                                            
+Completed 5000 requests                                                                                                                                                                                            
+Completed 6000 requests                                                                                                                                                                                            
+Completed 7000 requests                                                                                                                                                                                            
+Completed 8000 requests                                                                                                                                                                                            
+Completed 9000 requests                                                                                                                                                                                            
+Completed 10000 requests                                                                                                                                                                                           
+Finished 10000 requests                                                                                                                                                                                            
+                                                                                                                                                                                                                   
+                                                                                                                                                                                                                   
+Server Software:        waitress                                                                                                                                                                                   
+Server Hostname:        localhost                                                                                                                                                                                  
+Server Port:            5000                                                                                                                                                                                       
+                                                                                                                                                                                                                   
+Document Path:          /api/signin                                                                                                                                                                                
+Document Length:        41 bytes             
+         
+Concurrency Level:      4
+Time taken for tests:   52.124 seconds
+Complete requests:      10000
+Failed requests:        0
+Total transferred:      6550000 bytes
+Total body sent:        1930000
+HTML transferred:       410000 bytes
+Requests per second:    191.85 [#/sec] (mean)
+Time per request:       20.850 [ms] (mean)
+Time per request:       5.212 [ms] (mean, across all concurrent requests)
+Transfer rate:          122.72 [Kbytes/sec] received
+                        36.16 kb/s sent
+                        158.88 kb/s total
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.0      0       0
+Processing:     6   21   3.6     21      79
+Waiting:        6   20   3.7     20      79
+Total:          6   21   3.6     21      79
+
+Percentage of the requests served within a certain time (ms)
+  50%     21
+  66%     21
+  75%     22
+  80%     22
+  90%     25
+  95%     27
+  98%     29
+  99%     31
+ 100%     79 (longest request)
+-----------------------
+$ ORIGIN=http://localhost:3000 PG_CONNECTION_URL=postgresql://iroco:iroco@postgresql:5432/iroco PG_DRIVER=pg node build
+$ ab -n 1000 -c 4 -p login.form -T 'application/x-www-form-urlencoded' -H 'Origin: http://localhost:3000'  http://localhost:3000/                     
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>                                                                                                                                                            
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/                                                                                                                                           
+Licensed to The Apache Software Foundation, http://www.apache.org/                                                                                                                                                 
+                                                                                                                                                                                                                   
+Benchmarking localhost (be patient)                                                                                                                                                                                
+Completed 100 requests                                                                                                                                                                                             
+Completed 200 requests                                                                                                                                                                                             
+Completed 300 requests                                                                                                                                                                                             
+Completed 400 requests                                                                                                                                                                                             
+Completed 500 requests                                                                                                                                                                                             
+Completed 600 requests                                                                                                                                                                                             
+Completed 700 requests
+Completed 800 requests
+Completed 900 requests
+Completed 1000 requests
+Finished 1000 requests
+
+
+Server Software:        
+Server Hostname:        localhost
+Server Port:            3000
+
+Document Path:          /
+Document Length:        58 bytes
+
+Concurrency Level:      4
+Time taken for tests:   82.274 seconds
+Complete requests:      1000
+Failed requests:        0
+Total transferred:      518000 bytes
+Total body sent:        220000
+HTML transferred:       58000 bytes
+Requests per second:    12.15 [#/sec] (mean)
+Time per request:       329.094 [ms] (mean)
+Time per request:       82.274 [ms] (mean, across all concurrent requests)
+Transfer rate:          6.15 [Kbytes/sec] received
+                        2.61 kb/s sent
+                        8.76 kb/s total
+
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.0      0       0
+Processing:   113  328  95.6    310     507
+Waiting:       86  258  58.1    249     352
+Total:        113  328  95.6    310     507
+
+Percentage of the requests served within a certain time (ms)
+  50%    310
+  66%    335
+  75%    412
+  80%    420
+  90%    494
+  95%    498
+  98%    502
+  99%    504
+ 100%    507 (longest request)
+ 
+ ----------------------
+ Avec driver pgnative
+$ ORIGIN=http://localhost:3000 PG_CONNECTION_URL=postgresql://iroco:iroco@postgresql:5432/iroco PG_DRIVER=pgnative node build     
+$ ab -n 1000 -c 4 -p login.form -T 'application/x-www-form-urlencoded' -H 'Origin: http://localhost:3000'  http://localhost:3000/                     
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>                                                                                                                                                            
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/                                                                                                                                           
+Licensed to The Apache Software Foundation, http://www.apache.org/                                                                                                                                                 
+                                                                                                                                                                                                                   
+Benchmarking localhost (be patient)                                                                                                                                                                                
+Completed 100 requests                                                                                                                                                                                             
+Completed 200 requests                                                                                                                                                                                             
+Completed 300 requests                                                                                                                                                                                             
+Completed 400 requests                                                                                                                                                                                             
+Completed 500 requests                                                                                                                                                                                             
+Completed 600 requests                                                                                                                                                                                             
+Completed 700 requests
+Completed 800 requests
+Completed 900 requests
+Completed 1000 requests
+Finished 1000 requests
+
+
+Server Software:        
+Server Hostname:        localhost
+Server Port:            3000
+
+Document Path:          /
+Document Length:        58 bytes
+
+Concurrency Level:      4
+Time taken for tests:   77.985 seconds
+Complete requests:      1000
+Failed requests:        0
+Total transferred:      518000 bytes
+Total body sent:        220000
+HTML transferred:       58000 bytes
+Requests per second:    12.82 [#/sec] (mean)
+Time per request:       311.938 [ms] (mean)
+Time per request:       77.985 [ms] (mean, across all concurrent requests)
+Transfer rate:          6.49 [Kbytes/sec] received
+                        2.75 kb/s sent
+                        9.24 kb/s total
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.0      0       0
+Processing:   174  311  85.8    304     514
+Waiting:       87  246  57.7    235     378
+Total:        174  311  85.8    305     514
+
+Percentage of the requests served within a certain time (ms)
+  50%    305
+  66%    320
+  75%    384
+  80%    399
+  90%    455
+  95%    463
+  98%    471
+  99%    476
+ 100%    514 (longest request)
+------------------
+Avec express
+
+$ ab -n 1000 -c 4 -p login.form -T 'application/x-www-form-urlencoded' -H 'Origin: http://localhost:3000'  http://localhost:3000/             [15/769]
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>                                                                                                                                                            
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/                                                                                                                                           
+Licensed to The Apache Software Foundation, http://www.apache.org/                                                                                                                                                 
+                                                                                                                                                                                                                   
+Benchmarking localhost (be patient)                                                                                                                                                                                
+Completed 100 requests                                                                                                                                                                                             
+Completed 200 requests                                                                                                                                                                                             
+Completed 300 requests                                                                                                                                                                                             
+Completed 400 requests                                                                                                                                                                                             
+Completed 500 requests                                                                                                                                                                                             
+Completed 600 requests                                                                                                                                                                                             
+Completed 700 requests                                                                                                                                                                                             
+Completed 800 requests                                                                                                                                                                                             
+Completed 900 requests                                                                                                                                                                                             
+Completed 1000 requests                                                                                                                                                                                            
+Finished 1000 requests
+
+
+Server Software:        
+Server Hostname:        localhost
+Server Port:            3000
+
+Document Path:          /
+Document Length:        58 bytes
+
+Concurrency Level:      4
+Time taken for tests:   86.859 seconds
+Complete requests:      1000
+Failed requests:        0
+Total transferred:      541000 bytes
+Total body sent:        220000
+HTML transferred:       58000 bytes
+Requests per second:    11.51 [#/sec] (mean)
+Time per request:       347.438 [ms] (mean)
+Time per request:       86.859 [ms] (mean, across all concurrent requests)
+Transfer rate:          6.08 [Kbytes/sec] received
+                        2.47 kb/s sent
+                        8.56 kb/s total
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.0      0       0
+Processing:   156  346  76.6    330     757
+Waiting:       78  279  78.0    278     562
+Total:        156  346  76.5    330     757
+
+Percentage of the requests served within a certain time (ms)
+  50%    330
+  66%    359
+  75%    384
+  80%    399
+  90%    445
+  95%    489
+  98%    551
+  99%    601
+ 100%    757 (longest request)
+-----------------------
+Avec Polka
+
+$ ab -n 1000 -c 4 -p login.form -T 'application/x-www-form-urlencoded' -H 'Origin: http://localhost:3000'  http://localhost:3000/             [15/892]
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>                                                                                                                                                            
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/                                                                                                                                           
+Licensed to The Apache Software Foundation, http://www.apache.org/                                                                                                                                                 
+                                                                                                                                                                                                                   
+Benchmarking localhost (be patient)                                                                                                                                                                                
+Completed 100 requests                                                                                                                                                                                             
+Completed 200 requests                                                                                                                                                                                             
+Completed 300 requests                                                                                                                                                                                             
+Completed 400 requests                                                                                                                                                                                             
+Completed 500 requests                                                                                                                                                                                             
+Completed 600 requests                                                                                                                                                                                             
+Completed 700 requests                                                                                                                                                                                             
+Completed 800 requests                                                                                                                                                                                             
+Completed 900 requests                                                                                                                                                                                             
+Completed 1000 requests                                                                                                                                                                                            
+Finished 1000 requests
+
+
+Server Software:        
+Server Hostname:        localhost
+Server Port:            3000
+
+Document Path:          /
+Document Length:        58 bytes
+
+Concurrency Level:      4
+Time taken for tests:   84.123 seconds
+Complete requests:      1000
+Failed requests:        0
+Total transferred:      518000 bytes
+Total body sent:        220000
+HTML transferred:       58000 bytes
+Requests per second:    11.89 [#/sec] (mean)
+Time per request:       336.492 [ms] (mean)
+Time per request:       84.123 [ms] (mean, across all concurrent requests)
+Transfer rate:          6.01 [Kbytes/sec] received
+                        2.55 kb/s sent
+                        8.57 kb/s total
+
+
+
