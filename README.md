@@ -47,3 +47,15 @@ It was not working because of the end of line `0a` line feed character. We had t
 ```shell
 $ truncate -s -1 login.form
 ```
+
+## Apps
+
+For the pyramid app to work with frontend svelte and backend python we've added an nginx reverse proxy with :
+
+```nginx
+root /home/dev/src/iroco-app/build; # the front build folder
+location /api {
+    proxy_pass http://localhost:5000;
+    proxy_cookie_domain localhost 192.168.1.3;
+}
+```
