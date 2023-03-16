@@ -204,7 +204,7 @@ Merci l'Open Source
 class: middle
 .header[![iroco-logo](images/iroco.svg)]
 
-## Comment quantifier l'effet ?
+## Comment quantifier ?
 
 1. Faire un recensement de tous les mobiles/tablettes android
 2. Identifier la part de ceux qui sont conservés à partir de la version "Nougat" (v.s. dernière version fonctionnelle)
