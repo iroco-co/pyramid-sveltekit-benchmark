@@ -5,6 +5,17 @@ class: center, middle
 
 Bruno Thomas - Iroco.co - @bthomas@mastodon.social
 ---
+class: middle,center
+.header[![iroco-logo](images/iroco.svg)]
+
+# Iroco
+
+* fournisseur de mail
+* calendrier en ligne
+* contacts en ligne
+
+*OpenSource et Eco-"étudié"*
+---
 class: middle
 .header[![iroco-logo](images/iroco.svg)]
 
@@ -117,6 +128,13 @@ class: middle
 <img src="images/benchs/get_user_c8_chart.png" width="600px"/>
 
 ---
+class: middle
+.header[![iroco-logo](images/iroco.svg)]
+
+> *À petites causes, grands effets :*
+
+<blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">How can `a+b` be almost 4x faster than `b+a`?<br><br>🤯<br><br>1/6 <a href="https://t.co/UYAGQJYLmL">pic.twitter.com/UYAGQJYLmL</a></p>&mdash; Miško Hevery (Builder.io/Qwik) (@mhevery) <a href="https://twitter.com/mhevery/status/1635492705315999744?ref_src=twsrc%5Etfw">March 14, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+---
 class: center, middle
 .header[![iroco-logo](images/iroco.svg)]
 
@@ -163,7 +181,7 @@ class: middle,center
 * Dual-core 1.0 GHz Cortex-A9
 
 ---
-class: middle
+class: middle,center
 .header[![iroco-logo](images/iroco.svg)]
 
 ## Test KO
@@ -179,13 +197,30 @@ class: middle,center
 
 ## Test OK
 
-* Merci l'Open Source
+<iframe src="https://player.vimeo.com/video/808863331?h=bc33cba824&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="600" height="300" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="iroco-galaxytab"></iframe>
+
+Merci l'Open Source
+---
+class: middle
+.header[![iroco-logo](images/iroco.svg)]
+
+## Comment quantifier l'effet ?
+
+1. Faire un recensement de tous les mobiles/tablettes android
+2. Identifier la part de ceux qui sont conservés à partir de la version "Nougat" (v.s. dernière version fonctionnelle)
+3. Estimer ou trouver le nombre d'équipements qui "pourraient" être conservés
 
 ---
 class: middle
 .header[![iroco-logo](images/iroco.svg)]
 
 # Conclusion
+
+* Effet de surprise lors de tests de charge
+* Scope 2 mineur pour le ratio client/serveur
+  * mais des conséquences étonnantes sur le run même sur une ligne de code
+  * tests de charge en continu ?
+* Scope 3 difficile à quantifier
 
 ---
 class: middle
