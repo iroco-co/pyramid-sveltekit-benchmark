@@ -3,7 +3,190 @@ class: center, middle
 
 # Tests de charge SvelteKit / Pyramid
 
-Bruno Thomas - Iroco.co - @bam_thomas
+Bruno Thomas - Iroco.co - @bthomas@mastodon.social
+---
+class: middle
+.header[![iroco-logo](images/iroco.svg)]
+
+# Historique & Contexte
+
+1. Existant python/js (endetté pour js)
+2. [Tests backend](https://blog.iroco.co/tir-laptop/) rust/python
+3. [Tests frontend](https://blog.iroco.co/frontend-benchmark/) svelte/react/vue
+4. Migration front vers svelte
+5. [Sortie de sveltekit](https://svelte.dev/blog/announcing-sveltekit-1.0)
+6. Retours de bonne tenue en charge de nodejs
+
+---
+class: center, middle
+.header[![iroco-logo](images/iroco.svg)]
+
+.spacer[]
+
+<a href="https://dl.acm.org/doi/10.1145/3136014.3136031"><img src="images/tableau_langages.png" width="600px"/></a>
+---
+class: middle
+.header[![iroco-logo](images/iroco.svg)]
+
+## Svelte ? Sveltekit ? Pyramid ?
+
+* [Pyramid](https://trypyramid.com/) : framework web python backend (s'éxécute sur le serveur)
+* [Svelte](https://svelte.dev/) : framework web frontend (s'éxécute dans le navigateur)
+* [SvelteKit](https://kit.svelte.dev/) : méta-framework web (fullstack : s'exécute dans les deux)
+---
+class: middle
+.header[![iroco-logo](images/iroco.svg)]
+
+## Pourquoi Svelte/Sveltekit ?
+  <img src="images/svelte-system.png" width="200px"/>
+  <img src="images/svelte-kit-machine.3af040cb.png" width="300px"/>
+
+* Créé par Rich Harris depuis 2016
+* Objectif : revenir au web (HTML, javascript, CSS) et écrire moins de code
+* S'utilise au build : génère du HTML/javascript/CSS qui est déployé sur le serveur
+* Pas de DOM virtuel
+* Sveltekit : usine logicielle + serveur d'application basé sur la structure de fichiers sur disque. Permet de "migrer" ou mutualiser du code client/serveur
+* Javascript/Typescript : expertise plus courante chez les développeurs que Rust
+---
+class: middle
+.header[![iroco-logo](images/iroco.svg)]
+
+## Les promesses
+
+* Prefetch
+* Server Side Rendering
+* Reactive
+* Code-splitting
+* Minification
+* Compatible pur HTML (sans javascript)
+* Composants web modernes
+* Build et runtime rapide (vite, vitest...)
+---
+class: center, middle
+.header[![iroco-logo](images/iroco.svg)]
+
+# Scope 2
+
+---
+class: center, middle
+.header[![iroco-logo](images/iroco.svg)]
+
+## Tests de charge serveur
+![apache bench](images/bench_back.drawio.svg)
+
+---
+class: center, middle
+.header[![iroco-logo](images/iroco.svg)]
+
+### Scenario 1 : login
+
+![login sequence](images/login.drawio.svg)
+---
+class: middle
+.header[![iroco-logo](images/iroco.svg)]
+
+### Résultats : login
+
+<img src="images/benchs/login_ab_chart.png" width="600px"/>
+<img src="images/benchs/login_chart.png" width="600px"/>
+
+---
+class: center,middle
+.header[![iroco-logo](images/iroco.svg)]
+
+### Scenario 2 : GET utilisateur BDD
+
+![login sequence](images/get_user.drawio.svg)
+
+---
+class: middle
+.header[![iroco-logo](images/iroco.svg)]
+
+### Résultats : utilisateur BDD
+
+<img src="images/benchs/get_user_ab_chart.png" width="600px"/>
+<img src="images/benchs/get_user_chart.png" width="600px"/>
+
+---
+class: middle
+.header[![iroco-logo](images/iroco.svg)]
+
+### Résultats : utilisateur BDD 8 clients
+
+<img src="images/benchs/get_user_c8_ab_chart.png" width="600px"/>
+<img src="images/benchs/get_user_c8_chart.png" width="600px"/>
+
+---
+class: center, middle
+.header[![iroco-logo](images/iroco.svg)]
+
+## Tests de charge client (navigateur)
+![apache bench](images/jmeter-selenium.png)
+
+---
+class: middle
+.header[![iroco-logo](images/iroco.svg)]
+
+### Scénario : login et navigation
+* Login utilisateur
+* Navigation (100 fois)
+  * clic sur "Aliases"
+  * clic sur "Mon compte"
+* Logout
+
+Avec 4 utilisateurs concurrents
+---
+class: middle
+.header[![iroco-logo](images/iroco.svg)]
+
+### Résultats : test client
+
+<img src="images/benchs/client_c4_jmeter_chart.png" width="600px"/>
+<img src="images/benchs/client_c4_chart.png" width="600px"/>
+
+---
+class: middle,center
+.header[![iroco-logo](images/iroco.svg)]
+
+# Scope 3
+
+*Obsolescence programmée*
+---
+class: middle,center
+.header[![iroco-logo](images/iroco.svg)]
+
+## Test galaxy tab 10.1 P7510
+<img src="images/Samsung_Galaxy_Tab_10.png" width="200px"/>
+
+* Mise sur le marché en 2011
+* Android 3.1 "Honeycomb"
+* Dual-core 1.0 GHz Cortex-A9
+
+---
+class: middle
+.header[![iroco-logo](images/iroco.svg)]
+
+## Test KO
+<img src="images/billboard-bg.svg" width="200px"/>
+
+* Impossible d'utiliser HTTPS (version TLS 1.0 trop ancienne)
+* Impossible de la mettre à jour avec la procédure "grand public"
+* Mise à jour avec [Android AOSP](https://source.android.com/) version 7 "Nougat" (2016)
+
+---
+class: middle,center
+.header[![iroco-logo](images/iroco.svg)]
+
+## Test OK
+
+* Merci l'Open Source
+
+---
+class: middle
+.header[![iroco-logo](images/iroco.svg)]
+
+# Conclusion
+
 ---
 class: middle
 .header[![iroco-logo](images/iroco.svg)]
