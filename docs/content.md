@@ -1,12 +1,12 @@
 class: center, middle
-.header[![iroco-logo](images/iroco.svg)]
+.header[![iroco-logo](images/iroco‧svg)]
 
 # Tests de charge SvelteKit / Pyramid
 
-Bruno Thomas - Iroco.co - @bthomas@mastodon.social
+Bruno Thomas - Iroco‧co - @bthomas@mastodon.social
 ---
 class: middle,center
-.header[![iroco-logo](images/iroco.svg)]
+.header[![iroco-logo](images/iroco‧svg)]
 
 # [Iroco](https://iroco.co)
 
@@ -15,9 +15,10 @@ class: middle,center
 * contacts en ligne
 
 *[OpenSource](https://github.com/iroco-co) et Eco-"étudié"*
+*Que conserver de l'IT dans un monde à 1,5°C en 2050 ?*
 ---
 class: middle
-.header[![iroco-logo](images/iroco.svg)]
+.header[![iroco-logo](images/iroco‧svg)]
 
 # Historique & Contexte
 
@@ -30,14 +31,14 @@ class: middle
 
 ---
 class: center, middle
-.header[![iroco-logo](images/iroco.svg)]
+.header[![iroco-logo](images/iroco‧svg)]
 
 .spacer[]
 
-<a href="https://dl.acm.org/doi/10.1145/3136014.3136031"><img src="images/tableau_langages.png" width="600px"/></a>
+<a href="https://dl.acm.org/doi/10.1145/3136014.3136031"><img src="images/tableau_langages‧png" width="600px"/></a>
 ---
 class: middle
-.header[![iroco-logo](images/iroco.svg)]
+.header[![iroco-logo](images/iroco‧svg)]
 
 ## Svelte ? Sveltekit ? Pyramid ?
 
@@ -46,11 +47,11 @@ class: middle
 * [SvelteKit](https://kit.svelte.dev/) : méta-framework web (fullstack : s'exécute dans les deux)
 ---
 class: middle
-.header[![iroco-logo](images/iroco.svg)]
+.header[![iroco-logo](images/iroco‧svg)]
 
 ## Pourquoi Svelte/Sveltekit ?
-  <img src="images/svelte-system.png" width="200px"/>
-  <img src="images/svelte-kit-machine.3af040cb.png" width="300px"/>
+  <img src="images/svelte-system‧png" width="200px"/>
+  <img src="images/svelte-kit-machine.3af040cb‧png" width="300px"/>
 
 * Créé par Rich Harris depuis 2016
 * Objectif : revenir au web (HTML, javascript, CSS) et écrire moins de code
@@ -60,7 +61,7 @@ class: middle
 * Javascript/Typescript : expertise plus courante chez les développeurs que Rust
 ---
 class: middle
-.header[![iroco-logo](images/iroco.svg)]
+.header[![iroco-logo](images/iroco‧svg)]
 
 ## Les promesses
 
@@ -74,76 +75,76 @@ class: middle
 * Build et runtime rapide (vite, vitest...)
 ---
 class: center, middle
-.header[![iroco-logo](images/iroco.svg)]
+.header[![iroco-logo](images/iroco‧svg)]
 
 # Scope 2
 
 ---
 class: center, middle
-.header[![iroco-logo](images/iroco.svg)]
+.header[![iroco-logo](images/iroco‧svg)]
 
 ## Tests de charge serveur
-![apache bench](images/bench_back.drawio.svg)
+![apache bench](images/bench_back‧drawio‧svg)
 
 ---
 class: center, middle
-.header[![iroco-logo](images/iroco.svg)]
+.header[![iroco-logo](images/iroco‧svg)]
 
 ### Scenario 1 : login
 
-![login sequence](images/login.drawio.svg)
+![login sequence](images/login‧drawio‧svg)
 ---
 class: middle
-.header[![iroco-logo](images/iroco.svg)]
+.header[![iroco-logo](images/iroco‧svg)]
 
 ### Résultats : login
 
-<img src="images/benchs/login_ab_chart.png" width="600px"/>
-<img src="images/benchs/login_chart.png" width="600px"/>
+<img src="images/benchs/login_ab_chart‧png" width="600px"/>
+<img src="images/benchs/login_chart‧png" width="600px"/>
 
 ---
 class: center,middle
-.header[![iroco-logo](images/iroco.svg)]
+.header[![iroco-logo](images/iroco‧svg)]
 
 ### Scenario 2 : GET utilisateur BDD
 
-![login sequence](images/get_user.drawio.svg)
+![login sequence](images/get_user‧drawio‧svg)
 
 ---
 class: middle
-.header[![iroco-logo](images/iroco.svg)]
+.header[![iroco-logo](images/iroco‧svg)]
 
 ### Résultats : utilisateur BDD
 
-<img src="images/benchs/get_user_ab_chart.png" width="600px"/>
-<img src="images/benchs/get_user_chart.png" width="600px"/>
+<img src="images/benchs/get_user_ab_chart‧png" width="600px"/>
+<img src="images/benchs/get_user_chart‧png" width="600px"/>
 
 ---
 class: middle
-.header[![iroco-logo](images/iroco.svg)]
+.header[![iroco-logo](images/iroco‧svg)]
 
 ### Résultats : utilisateur BDD 8 clients
 
-<img src="images/benchs/get_user_c8_ab_chart.png" width="600px"/>
-<img src="images/benchs/get_user_c8_chart.png" width="600px"/>
+<img src="images/benchs/get_user_c8_ab_chart‧png" width="600px"/>
+<img src="images/benchs/get_user_c8_chart‧png" width="600px"/>
 
 ---
 class: middle
-.header[![iroco-logo](images/iroco.svg)]
+.header[![iroco-logo](images/iroco‧svg)]
 
 > *À petites causes, grands effets :*
 
-<blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">How can `a+b` be almost 4x faster than `b+a`?<br><br>🤯<br><br>1/6 <a href="https://t.co/UYAGQJYLmL">pic.twitter.com/UYAGQJYLmL</a></p>&mdash; Miško Hevery (Builder.io/Qwik) (@mhevery) <a href="https://twitter.com/mhevery/status/1635492705315999744?ref_src=twsrc%5Etfw">March 14, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+<blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">How can `a+b` be almost 4x faster than `b+a`?<br><br>🤯<br><br>1/6 <a href="https://t.co/UYAGQJYLmL">pic.twitter.com/UYAGQJYLmL</a></p>&mdash; Miško Hevery (Builder‧io/Qwik) (@mhevery) <a href="https://twitter.com/mhevery/status/1635492705315999744?ref_src=twsrc%5Etfw">March 14, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
 ---
 class: center, middle
-.header[![iroco-logo](images/iroco.svg)]
+.header[![iroco-logo](images/iroco‧svg)]
 
 ## Tests de charge client (navigateur)
-![apache bench](images/jmeter-selenium.png)
+![apache bench](images/jmeter-selenium‧png)
 
 ---
 class: middle
-.header[![iroco-logo](images/iroco.svg)]
+.header[![iroco-logo](images/iroco‧svg)]
 
 ### Scénario : login et navigation
 * Login utilisateur
@@ -155,23 +156,23 @@ class: middle
 Avec 4 utilisateurs concurrents
 ---
 class: middle
-.header[![iroco-logo](images/iroco.svg)]
+.header[![iroco-logo](images/iroco‧svg)]
 
 ### Résultats : test client
 
-<img src="images/benchs/client_c4_jmeter_chart.png" width="600px"/>
-<img src="images/benchs/client_c4_chart.png" width="600px"/>
+<img src="images/benchs/client_c4_jmeter_chart‧png" width="600px"/>
+<img src="images/benchs/client_c4_chart‧png" width="600px"/>
 
 ---
 class: middle,center
-.header[![iroco-logo](images/iroco.svg)]
+.header[![iroco-logo](images/iroco‧svg)]
 
 # Scope 3
 
 *Obsolescence programmée*
 ---
 class: middle,center
-.header[![iroco-logo](images/iroco.svg)]
+.header[![iroco-logo](images/iroco‧svg)]
 
 ## Test galaxy tab 10.1 P7510
 <img src="images/Samsung_Galaxy_Tab_10.png" width="200px"/>
@@ -182,10 +183,10 @@ class: middle,center
 
 ---
 class: middle,center
-.header[![iroco-logo](images/iroco.svg)]
+.header[![iroco-logo](images/iroco‧svg)]
 
 ## Test KO
-<img src="images/billboard-bg.svg" width="200px"/>
+<img src="images/billboard-bg‧svg" width="200px"/>
 
 * Impossible d'utiliser HTTPS (version TLS 1.0 trop ancienne)
 * Impossible de la mettre à jour avec la procédure "grand public"
@@ -193,7 +194,7 @@ class: middle,center
 
 ---
 class: middle,center
-.header[![iroco-logo](images/iroco.svg)]
+.header[![iroco-logo](images/iroco‧svg)]
 
 ## Test OK
 
@@ -202,17 +203,17 @@ class: middle,center
 Merci l'Open Source
 ---
 class: middle
-.header[![iroco-logo](images/iroco.svg)]
+.header[![iroco-logo](images/iroco‧svg)]
 
 ## Comment quantifier ?
 
 1. Faire un recensement de tous les mobiles/tablettes android
-2. Identifier la part de ceux qui sont conservés à partir de la version "Nougat" (v.s. dernière version fonctionnelle)
+2. Identifier la part de ceux qui sont conservés à partir de la version "Nougat" (v‧s. dernière version fonctionnelle)
 3. Estimer ou trouver le nombre d'équipements qui "pourraient" être conservés
 
 ---
 class: middle
-.header[![iroco-logo](images/iroco.svg)]
+.header[![iroco-logo](images/iroco‧svg)]
 
 # Conséquences 
 
@@ -224,7 +225,7 @@ class: middle
 * simplicité: bonheur d'avoir un seul repository et un packaging unique
 ---
 class: middle
-.header[![iroco-logo](images/iroco.svg)]
+.header[![iroco-logo](images/iroco‧svg)]
 
 # Conclusion
 
@@ -237,7 +238,7 @@ class: middle
 
 ---
 class: middle
-.header[![iroco-logo](images/iroco.svg)]
+.header[![iroco-logo](images/iroco‧svg)]
 
 # Liens et références
 
