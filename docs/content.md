@@ -14,8 +14,7 @@ class: middle,center
 * calendrier en ligne
 * contacts en ligne
 
-*[OpenSource](https://github.com/iroco-co) et Eco-"étudié
-
+*[OpenSource](https://github.com/iroco-co) et Eco-"étudié"*
 *Que conserver de l'IT dans un monde à 1,5°C en 2050 ?*
 ---
 class: middle
