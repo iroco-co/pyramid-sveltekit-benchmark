@@ -15,6 +15,7 @@ class: middle,center
 * contacts en ligne
 
 *[OpenSource](https://github.com/iroco-co) et Eco-"étudié"*
+*Quelle IT dans un monde à 1,5°C en 2050 ?*
 ---
 class: middle
 .header[![iroco-logo](images/iroco.svg)]
