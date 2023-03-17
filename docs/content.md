@@ -8,13 +8,13 @@ Bruno Thomas - Iroco.co - @bthomas@mastodon.social
 class: middle,center
 .header[![iroco-logo](images/iroco.svg)]
 
-# Iroco
+# [Iroco](https://iroco.co)
 
 * fournisseur de mail
 * calendrier en ligne
 * contacts en ligne
 
-*OpenSource et Eco-"étudié"*
+*[OpenSource](https://github.com/iroco-co) et Eco-"étudié"*
 ---
 class: middle
 .header[![iroco-logo](images/iroco.svg)]
@@ -214,13 +214,26 @@ class: middle
 class: middle
 .header[![iroco-logo](images/iroco.svg)]
 
+# Conséquences 
+
+* le design applicatif évolue : 
+  * au début du web : formulaires POST
+  * puis REST API (requêtes ajax)
+  * retour aux sources
+* l'[architecture hexagonale](https://alistair.cockburn.us/hexagonal-architecture/) pour implémenter des API REST avec SvelteKit
+* simplicité: bonheur d'avoir un seul repository et un packaging unique
+---
+class: middle
+.header[![iroco-logo](images/iroco.svg)]
+
 # Conclusion
 
 * Effet de surprise lors de tests de charge
 * Scope 2 mineur pour le ratio client/serveur
   * mais des conséquences étonnantes sur le run même sur une ligne de code
   * tests de charge en continu ?
-* Scope 3 difficile à quantifier
+* Scope 3 permet de revenir aux protocoles standards
+* Lutte contre l'obsolescence difficile à quantifier
 
 ---
 class: middle
