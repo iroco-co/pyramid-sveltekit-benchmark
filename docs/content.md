@@ -130,13 +130,6 @@ class: middle
 <img src="images/benchs/get_user_c8_chart.png" width="600px"/>
 
 ---
-class: middle
-.header[![iroco-logo](images/iroco.svg)]
-
-> *À petites causes, grands effets :*
-
-<blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">How can `a+b` be almost 4x faster than `b+a`?<br><br>🤯<br><br>1/6 <a href="https://t.co/UYAGQJYLmL">pic.twitter.com/UYAGQJYLmL</a></p>&mdash; Miško Hevery (Builder.io/Qwik) (@mhevery) <a href="https://twitter.com/mhevery/status/1635492705315999744?ref_src=twsrc%5Etfw">March 14, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
----
 class: center, middle
 .header[![iroco-logo](images/iroco.svg)]
 
